@@ -1,3 +1,24 @@
+let navNAV = document.getElementById('navNav');
+let signNAV = document.getElementById('signNav');
+let goOut = document.getElementById('goOutNav');
+let downOrUp =document.getElementById('downOrUp');
+
+
+ function navMenu() {
+   if (navNAV.style.display=="block" &&
+       signNAV.style.display=="block") {
+        signNAV.style.display="none";
+        navNAV.style.display="none";
+        downOrUp.style.transform= 'rotate(0deg)';
+   }
+   else {
+     downOrUp.style.transform= 'rotate(180deg)';
+     signNAV.style.display="block";
+     navNAV.style.display="block";
+   }
+ }
+
+
 $(function () {
     var operation = "C"; //"C"=Crear
     var selected_index = -1; // Индекс выбранного элемента в списке
