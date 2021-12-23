@@ -1,0 +1,1011 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.valid{
+  position: fixed;
+  top:-120%; left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width:100%;
+  background:rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s
+}
+
+.valid.active{
+  top:0;
+}
+
+.valid form{
+  margin:2rem;
+  padding: 25px 25px;
+  border-radius: .5rem;
+  background:#fff;
+  width:38rem;
+}
+
+.valid form h3{
+  font-size: 2rem;
+  color:#444;
+  text-transform: uppercase;
+  text-align: center;
+  padding:1rem 0;
+}
+
+.valid form .box{
+  width:90%;
+  padding:1rem;
+  font-size: 1rem;
+  color:#333;
+  margin:.6rem;
+  border:.1rem solid rgba(0,0,0,.3);
+  border-radius: .5rem;
+  text-transform: none;
+}
+
+.valid form .box:focus{
+  border-color: #ffa500;
+}
+
+.valid form #rememberMe{
+  margin: .6rem;
+}
+
+.valid form label{
+  margin: .6rem;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.valid form .valid_btn{
+  display: block;
+  width:95%;
+ margin: .6rem;
+ background:#ffa500;
+ color:#fff;
+ padding:.3rem 3rem;
+ border:.2rem solid #ffa500;
+ border-radius: .5rem;
+ cursor: pointer;
+ font-size: 1.2rem;
+ position: relative;
+ left: 0;
+}
+
+.valid form p{
+  padding:.6rem;
+  font-size: 1rem;
+  color:#666;
+
+}
+
+.valid form p a{
+  color: orange;
+}
+
+.valid form p a:hover{
+  color:#333;
+  text-decoration: underline;
+}
+
+.valid #form-close{
+  position: absolute;
+  top:2rem; right:3rem;
+  font-size: 3rem;
+  color:#fff;
+  cursor: pointer;
+}
+
+
+/*=============== header ===============*/
+.header__container {
+  padding:0 10%;
+  /* background-color: #EB8A3E; */
+}
+
+.header__tools {
+  display: grid;
+  grid-template-columns: 100px auto 85px;
+}
+
+.header__tools_icon {
+  padding: 0;
+  align-items: center;
+  display: flex;
+}
+
+.header__tools_icon > a {
+  text-decoration: none;
+  color: #FF8C00;
+}
+
+.header__tools_sign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.buttons {
+  font-size: 17.5px;
+  font-weight: 500;
+  width: 80px;
+  height: 40px;
+  margin-left: 5px;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.buttons:hover {
+  border: 2px solid black;
+  cursor: pointer;
+  /* box-shadow: 0px 0px 3px black; */
+}
+
+/* ================ log out ======================= */
+
+.header__tools_sign {
+  display: none;
+}
+
+.header__arrow {
+  display: none;
+}
+
+.header__tools_goOut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.header__arrow_downOrup > button {
+  background-color: #FFF;
+  border: 0;
+}
+
+#downOrUp {
+  transition: 0.3s;
+}
+
+
+/*=============== nav ===============*/
+
+.nav {
+  padding: 0 10%;
+}
+
+.header__tools_nav {
+  margin: 0;
+  align-items: center;
+  padding-top: 15px;
+  font-weight: 700;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.header__nav_list-div {
+
+}
+
+.header__nav_list-div > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav_list-div > ul > li {
+  line-height: 1.5;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.header__nav_list-div > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ================== transition hover =================== */
+    .header__nav_list-div > ul > li::before {
+      position: absolute;
+      content: "";
+      border-top: 3px solid black;
+      width: 50px;
+      height: 2px;
+      /* background-color: black; */
+      top: 0;
+      left: 0;
+      transition: 1s;
+      opacity: 0;
+    }
+
+    .header__nav_list-div > ul > li::after {
+      position: absolute;
+      content: "";
+      border-bottom: 3px solid black;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2px;
+      /* background-color: black; */
+      transition: 1s;
+      opacity: 0;
+    }
+
+    .header__nav_list-div > ul > li:hover:after {
+      right:50%;
+      opacity: 1;
+    }
+
+    .header__nav_list-div > ul > li:hover:before {
+      left: 50%;
+      opacity: 1;
+    }
+
+    #activeS::before {
+      position: absolute;
+      content: "";
+      border-top: 3px solid black;
+      border-left: 3px solid black;
+      width: 70px;
+      height: 20px;
+      /* background-color: white; */
+      top: 0;
+      left: 0;
+      transition: 1s;
+      opacity: 1;
+    }
+
+    #activeS::after {
+      position: absolute;
+      content: "";
+      border-bottom: 3px solid black;
+      border-right: 3px solid black;
+      right: 0;
+      bottom: 0;
+      width: 70px;
+      height: 20px;
+      /* background-color: black; */
+      transition: 1s;
+      opacity: 1;
+    }
+
+
+
+
+/*=============== main ================ */
+
+.main__home {
+  padding: 80px 10% 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625598975_12-kartinkin-com-p-vtorie-blyuda-fon-krasivie-foni-16.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__home_text {
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+}
+
+.main__home_text-title {
+  font-family: 'Enriqueta', serif;
+  font-size: 49px;
+}
+
+.main__home_text-p {
+  font-size: 26px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+input:focus {
+outline: 2px solid #FFA500	;
+border: 0;
+}
+
+
+/*   ============================== */
+.main_photos {
+  padding: 0 0;
+  margin: 0;
+  /* padding: 0 10%; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.main__slider {
+  height: 700px;
+  width: 70%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 60px auto 50px;
+  box-shadow: 0px 0px 5px gray;
+  /* z-index: 9; */
+}
+
+.main__slider .main__slider-animation {
+  height: 100%;
+  width: 1000%;
+  display: flex;
+  position: relative;
+}
+
+.main__slider .main__slider-animation > img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+  position: relative;
+}
+
+.checkboxInput {
+  display:none;
+}
+
+.labelSlider {
+  margin-top: 15px;
+  position: absolute;
+  left: 50%;
+  /* bottom: 20%; */
+  transform: translateX(-50%);
+}
+
+.labelSlider > .main__changer {
+  position: absolute;
+  height: 30px;
+  width: 70px;
+  background: crimson;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px darkred, inset 0px 0px 4px black;
+}
+
+.labelSlider > .main__changer::before {
+  content: '';
+  position: absolute;
+  top : 2px;
+  left: 5px;
+  height:  25px;
+  width: 25px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#startPlay:checked ~ .labelSlider > .main__changer {
+  background: lightgreen;
+  box-shadow: 0px 0px 5px green, inset 0px 0px 5px black;
+
+}
+
+#startPlay:checked ~ .labelSlider > .main__changer::before {
+  left: 40px;
+}
+
+#startPlay:checked ~ .main__slider .main__slider-animation > img {
+  animation: start 100s alternate infinite;
+}
+
+@keyframes start{
+  0% {
+    left:0%;
+  }
+  100% {
+    left:-90%;
+  }
+
+}
+
+
+
+
+
+
+
+/* ==================================== */
+
+.main__recipes {
+  padding: 50px 10% 20px;
+  /* background-image:url("https://cs10.pikabu.ru/post_img/big/2018/08/18/7/1534590614195235309.png"); */
+  /* background-image: url("http://static-cdn4.vigbo.tech/u36944/49011/blog/3881024/4527444/preview/1000-crop--cf87300f633182be424b56fc9c18d1de.jpg?v=2"); */
+  background-size: cover;
+  background-image: url(img/foon.jpg);
+
+    background-image: url("https://instapik.ru/wp-content/uploads/2020/08/white-background-1.jpg");
+
+}
+
+.main__recipes_title {
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border-radius: 0 0 20px 20px;
+  font-size: 35px;
+  text-align: center;
+  /* background-color: #E8A735; */
+  line-height: 1.5;
+  font-family: 'Comfortaa', cursive;
+}
+
+.main__recipes-section {
+  margin: 0 ;
+}
+
+.main__recipes-section  {
+  padding: 10px 15px 100px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6%  6%;
+  /* margin-bottom: 200px; */
+  /* justify-content:space-around; */
+}
+
+.main__recipes-section_box{
+  text-align: justify;
+  background-color: #F9F9FF;
+  /* background-color: #DCDCDC	; */
+  max-width: 300px;
+  padding: 10px 20px;
+  /* margin: 0px 0px 10px 0; */
+  /* border: 4px solid #C29545; */
+  border: 4px solid #A9A9A9	;
+  /* border-radius: 10px; */
+}
+
+.main__recipes-section_box >img {
+  width: 100%;
+}
+
+.main__recipes-section_box > h2{
+  font-size: 22px;
+}
+
+.main__recipes-section_box-button {
+  height: 1.5rem;
+  width: 7rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align:center;
+  /* float: right; */
+  /* transition: .7s ease-in; */
+
+}
+
+.main__recipes-section_box-button:hover {
+  color: #333;
+  background-color: #FFD700	;
+}
+
+
+/* ======================================== */
+.main__recipes-main {
+  padding: 0 10%;
+}
+
+.main__recipes-main-page_text-title {
+  font-weight: bold;
+  padding: 0 10%;
+  font-size: 33px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+  font-family: sans-serif;
+  color: red;
+            /* font-size: 50px; */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+}
+
+.main__recipes-main-page_text-title > img {
+  margin-bottom: -7px;
+}
+
+.main__recipes-main-page_text-img > img{
+  width: 70%;
+}
+
+.main__recipes-main-page_text-img {
+    text-align: center;
+}
+
+.main__recipes-main-page_text-T {
+  margin: 20px 0 40px 0;
+  padding: 0 10%;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.indent {
+  margin-left : 30px;
+}
+
+
+
+/* =========== mailing ================== */
+
+.main__partition {
+  padding: 0 10%;
+  text-align:center;
+  background-color: #4F4A45;
+  font-family: sans-serif;
+}
+
+.main__partition-mailing_form {
+  padding: 40px 0;
+}
+
+.main__partition-mailing_p {
+  margin: 0;
+  font-size: 20px;
+  color: #FFF;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.main__partition-mailing_input {
+  margin: 15px 0 0 0;
+  font-size: 15px;
+  border: 1px solid #666666;
+  width: 300px;
+  height: 30px;
+  text-indent: 10px;
+  line-height: 1.5;
+}
+
+.main__partition-mailing_button {
+  margin: 15px 0 ;
+  font-size: 15px;
+  color: #fff;
+  background-color: #323030;
+  border: 1px solid #666666;
+  width: 308px;
+  height: 30px;
+  text-indent: 10px;
+  line-height: 1.5;
+}
+
+.main__partition-mailing-tohide { /* КОгда нажимаешь отправляешь должен проверять */
+  color: #fff;
+  display: none;
+}
+
+
+
+
+
+
+/*=============== footer ===============*/
+.footer__links {
+  background-color: #323030;
+  padding: 20px 10%;
+}
+
+.footer__links_socialNetwork {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40%;
+}
+
+.footer__links_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__links_item-icon {
+  margin: 10px 20px;
+}
+
+.footer__links_item-icon > a > img {
+	filter: brightness(1) invert(1);
+}
+
+
+.footer__links_text {
+  color: #fff;
+}
+
+.footer__links_text > p > a {
+  color: #fff;
+}
+
+
+@media (max-width:1455px) {
+      .main__slider {
+        height: 600px;
+        width: 70%;
+      }
+    }
+
+@media (max-width:1242px) {
+      .main__slider {
+        height: 500px;
+        width: 65%;
+      }
+    }
+
+@media (max-width:1200px) {
+      .main__slider {
+        width: 65%;
+        height: 450px;
+        transition: 1s;
+      }
+
+      /*=============== main ================ */
+      .main__home {
+        padding: 80px 10% 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625598975_12-kartinkin-com-p-vtorie-blyuda-fon-krasivie-foni-16.jpg");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .main__home_text-title {
+        font-size: 40px;
+      }
+
+      .main__home_text-p {
+        font-size: 23px;
+      }
+    }
+
+@media (max-width:1100px) {
+      .main__slider {
+        height: 425px;
+        width: 65%;
+        transition: 1s;
+      }
+
+      .footer__links_socialNetwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30%;
+      }
+    }
+
+@media (max-width:992px) {
+      .main__home {
+        padding: 80px 10% 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625598975_12-kartinkin-com-p-vtorie-blyuda-fon-krasivie-foni-16.jpg");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .main__home_text-title {
+        font-size: 37px;
+      }
+
+      .main__home_text-p {
+        font-size: 20px;
+      }
+
+      .footer__links_socialNetwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20%;
+      }
+
+      .header__tools {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .header__arrow {
+        display: block;
+        text-align: right;
+      }
+
+      .header__tools_sign {
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        margin-bottom: 10px;
+        /* border-left:1px solid #666666;
+        border-right:1px solid #666666;
+        border-bottom:1px solid #666666; */
+      }
+
+      .header__tools_goOut {
+        position: relative;
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        margin-bottom: 10px;
+        /* border-left:1px solid #666666;
+        border-right:1px solid #666666;
+        border-bottom:1px solid #666666; */
+      }
+
+      .header__tools_goOut:hover, .header__tools_sign:hover {
+        background-color: #DCDCDC	;
+      }
+    /* ============================================= */
+      .nav {
+        padding: 0 0;
+      }
+
+      .header__tools_nav {
+        display: none;
+        margin: 10px 0 0 0;
+        padding: 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* border-top:1px solid #666666;
+        border-left:1px solid #666666;
+        border-right:1px solid #666666; */
+      }
+
+      .header__nav_list-div > ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header__nav_list-div > ul > li {
+        padding: 0px auto 0px auto;
+      }
+
+      .header__nav_list-div > ul > li:hover {
+        background-color: #DCDCDC	;
+      }
+
+      .header__tools_sign::before, .header__tools_goOut::before {
+        position: absolute;
+        content: "";
+        border-top: 1px solid black;
+        width: 50px;
+        height: 2px;
+        background-color: black;
+        top: 0;
+        left: 0;
+        transition: 1s;
+        opacity: 0;
+      }
+
+      .header__tools_sign::after, .header__tools_goOut::after{
+        position: absolute;
+        content: "";
+        border-bottom: 1px solid black;
+        right: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background-color: black;
+        transition: 1s;
+        opacity: 0;
+      }
+
+      .header__tools_sign:hover:after, .header__tools_goOut:hover:after {
+        right:50%;
+        opacity: 1;
+      }
+
+      .header__tools_sign:hover:before, .header__tools_goOut:hover:before {
+        left: 50%;
+        opacity: 1;
+      }
+
+      .buttons {
+        font-size: 17.5px;
+        font-weight: 500;
+        width: 80px;
+        height: 40px;
+        margin-left: 5px;
+        border: 2px solid #FFF;
+        border-radius: 5px;
+        background-color: #FFF;
+      }
+
+      .buttons:hover {
+        border: 0;
+        background-color: #DCDCDC	;
+      }
+
+      .main__recipes-section  {
+        padding: 10px 15px 200px 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 6%  6%;
+
+        /* margin-bottom: 200px; */
+        /* justify-content:space-around; */
+      }
+    }
+
+
+
+@media (max-width:950px) {
+      .main__slider {
+        height: 400px;
+        width: 70%;
+        transition: 1s;
+      }
+    }
+
+@media (max-width:850px) {
+      .main__slider {
+        height: 400px;
+        width: 80%;
+        transition: 1s;
+      }
+
+      .main__home {
+        padding: 30px 10% 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625598975_12-kartinkin-com-p-vtorie-blyuda-fon-krasivie-foni-16.jpg");
+
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+      }
+
+      .main__home_text-title {
+        font-size: 35px;
+      }
+
+      .main__home_text-p {
+        font-size: 19px;
+      }
+
+      .footer__links_socialNetwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 13%;
+      }
+    }
+
+@media (max-width:768px) {
+      .main__home {
+        padding: 50px 10% 40px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625598975_12-kartinkin-com-p-vtorie-blyuda-fon-krasivie-foni-16.jpg");
+
+        background-size:  cover;
+        background-repeat: no-repeat;
+      }
+
+      .main__home_text-title {
+        font-size: 33px;
+      }
+
+      .main__home_text-p {
+        font-size: 18px;
+        /* margin-bottom: 40px; */
+      }
+
+      .footer__links_socialNetwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 6%;
+      }
+}
+
+@media (max-width:750px) {
+      .main__slider {
+        width: 80%;
+        height: 350px;
+        transition: 1s;
+      }
+}
+
+@media (max-width:700px) {
+      .main__slider {
+        width: 90%;
+        height: 300px;
+      }
+
+      .main__home {
+        padding: 50px 10% 40px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625598975_12-kartinkin-com-p-vtorie-blyuda-fon-krasivie-foni-16.jpg");
+
+        background-size:  cover;
+        background-repeat: no-repeat;
+      }
+
+      .main__home_text-title {
+        font-size: 31px;
+      }
+
+      .main__home_text-p {
+        font-size: 16px;
+        /* margin-bottom: 40px; */
+      }
+
+      .footer__links_socialNetwork {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-gap: 5%;
+      }
+
+      .main__recipes-section  {
+        padding: 10px 15px 750px 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .main__recipes-section_box{
+        text-align: justify;
+        background-color: #F9F9FF;
+        max-width: 400px;
+        padding: 10px 20px;
+        border: 4px solid #A9A9A9	;
+      }
+}
+
+
+@media (max-width:576px) {
+      .main__home {
+        padding: 30px 10% 30px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        background-image: url("https://kartinkin.net/uploads/posts/2021-07/1625598975_12-kartinkin-com-p-vtorie-blyuda-fon-krasivie-foni-16.jpg");
+
+        /* background-size:  cover; */
+        background-repeat: no-repeat;
+      }
+
+      .main__home_text-title {
+        font-size: 27px;
+      }
+
+      .main__home_text-p {
+        font-size: 14px;
+        /* margin-bottom: 40px; */
+      }
+
+      .footer__links {
+        background-color: #323030;
+        padding: 20px 20%;
+      }
+
+      .footer__links_socialNetwork {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+      }
+
+      .footer__links_text {
+        margin-left: 20px;
+        /* text-align:center; */
+      }
+
+}

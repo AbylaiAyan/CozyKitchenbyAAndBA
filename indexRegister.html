@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FutureLearn</title>
+	<link rel="stylesheet" href="style/styleRegister.css">
+  <!-- <script type="text/javascript" src="/js/jquery/jquery.js"></script> -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/fluency/50/000000/cake.png" />
+
+</head>
+<body>
+	<div class="" id="main">
+		<!-- logo -->
+    <div class="header__tools_icon">
+      <a href="index.html"><img  class="header__tools_icon-img" src="https://img.icons8.com/fluency/70/000000/cake.png"/></a>
+    </div>
+		<!-- all -->
+		<div class="partRegister">
+      <div class="requiredCaution" id="vError">
+				<div class="requiredCaution-section">
+					<div class="requiredCaution__icon">
+						<img src="https://img.icons8.com/ios/20/000000/error--v1.png"/>
+					</div>
+					<div class="requiredCaution_text">
+						<p>We couldn’t sign you in. Check your email address and password, then try again.</p>
+					</div>
+				</div>
+				<div class="tri"> </div>
+			</div>
+			<div class="register"> <!-- links 2 -->
+				<div class="toregister"> <!-- Register -->
+					Register
+				</div>
+			</div>
+
+
+			<form class="form" action="indexRegister.html" method="post">
+				<div class="inForm">
+          <div class=" formval">
+						<label class="inForm__labelText" for="firstName">Name *</label>
+            <input id="fname" class="inForm__input firstName" type="text" name="fname" placeholder="Username" required>
+            <small>error message</small>
+					</div>
+
+          <div class=" formval">
+            <label class="inForm__labelText" for="name">Email adderss *</label>
+            <input id="name" class="inForm__input email" type="email" name="name" placeholder="enter your email" required>
+            <small>error message</small>
+          </div>
+          <div class=" formval">
+						<label class="inForm__labelText" for="pw">Choose a password *</label>
+            <input id="pw" class="inForm__input password" type="password" name="pw" placeholder="Password" required>
+            <small>error message</small>
+					</div>
+
+
+          <div class="inForm__register-button">
+            <button class="inform__button" type="button" onclick="store()" name="button"> <span class="inform__buttonSpan">Register</span></button>
+          </div>
+
+            </form>
+        </div>
+
+          <!-- button -->
+
+				</div>
+			</form>
+		</div>
+	</div>
+  <script src="Javascript/login.js"></script>
+</body>

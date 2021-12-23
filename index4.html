@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style4.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/fluency/50/000000/cake.png" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Corinthia:wght@700&family=Diplomata&family=IBM+Plex+Sans:wght@200&family=Nunito+Sans:ital,wght@0,400;0,600;1,600&family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <title>Cozy Kitchen</title>
+</head>
+<body>
+  <div class="">
+    <div class="">
+      <div class="header">
+        <div class="header__container">
+          <div class="header__tools"> <!-- будет титулка и вход и регистрация -->
+            <div class="header__tools_icon">
+              <a href="index.html"><img class="header__tools_icon-img" src="https://img.icons8.com/fluency/70/000000/cake.png"/></a>
+            </div>
+            <div class="header__arrow">
+              <div class="header__arrow_downOrup">
+                <button type="button" onclick="navMenu();" name="button">
+                  <img id="downOrUp" src="https://img.icons8.com/color/70/000000/drag-list-down.png"/>
+                </button>
+              </div>
+            </div>
+            <div class="header__tools_nav" id="navNav">
+              <div class="header__nav nav">  <!-- панель навигации ссылки -->
+                <div class="header__nav_list-div">
+                  <ul>
+                    <li><a href="index2.html">Hot dishes</a></li>
+                    <li><a href="index3.html">Confectionery</a></li>
+                    <li id="activeS"><a href="index4.html">Proper Nutrition</a></li>
+                    <li><a href="admin.html">Favourites</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header__tools_sign" id="signNav">
+              <div class="header__tools_sign-In">
+                <a href="#">
+                  <button class="header__tools_sign-In-button buttons" id="login-btn" type="button" name="button">
+                    Login
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="header__tools_goOut" id="goOutNav">
+              <div class="header__tools_log-out">
+                <a href="#">
+                  <button class="header__tools_log-out-button buttons" id="logout-btn" type="button" name="button">
+                    Log out
+                  </button>
+                </a>
+              </div>
+            </div>
+              <div class="valid">
+                  <div class="login">
+                    <i class="fas fa-times" id="form-close"></i>
+                      <form name='form-login'>
+                          <h3>SIGN IN</h3>
+
+                          <label for="userName">Email</label>
+                          <input type="email" class="box" id="userName" placeholder="Username" required>
+
+                          <label for="userPw">Password</label>
+                          <input type="password" class="box" id= "userPw" placeholder="Password" required>
+
+                          <div id="remember">
+                              <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                                     style="display: inline-block;">
+                              <label>Remember me</label>
+                          </div>
+
+                          <input id= "login_btn" class="valid_btn" type="submit" value="Login" onclick="check()">
+                          <p>don't have and account? <a href="indexRegister.html">register now</a></p>
+
+                      </form>
+                  </div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main__home">
+          <div class="main__home_text">
+            <div class="main__home_text-title animation">
+              Eating right is not only healthy, but also delicious<img src="https://img.icons8.com/color/48/000000/healthy-food-calories-calculator.png"/>
+            </div>
+            <div class="main__home_text-p animation">
+              <p class="animation">Recently, the situation in the world has changed globally. Because of this, the health of most people has weakened. Now people pay great attention to health.</p>
+              <p class="animation">In addition to physical exercise, nutrition has a special role in the path to bringing and preserving the body in a healthy form. Therefore, do not forget that you need to eat a full and varied diet to keep your figure in good shape and strengthen your health and immunity.</p>
+              <p class="animation">Everyone knows that sausage, sausages, semi-finished products, cookies and sweets are <span class="colorWords_span-red">junk food</span>. But few people think that it is also very expensive. Cooking other dishes based on seasonings, salt, sugar and butter is also a harmful food. In order to save money and make stocks, many people buy semi-finished products that are stored for a long time. But all these products cause severe damage to the immune system and the figure.</p>
+              <p class="animation">For our users, we have created a special section so that they can find useful recipes based only on <span class="colorWords_span-green">healthy and delicious </span> products.</p>
+            </div>
+          </div>
+          <div class="main__home_photos">
+            <img class="animation" src="img/imgPP1.jpg" alt="img1">
+            <img class="animation" src="img/imgPP2.jpg" alt="img2">
+            <img class="animation" src="img/imgPP3.jpg" alt="img3">
+            <img class="animation" src="img/imgPP4.jpg" alt="img4">
+          </div>
+        </div>
+        <!-- <div class="slidernew">
+          <div class="slide hi-slide">
+            <div class="hi-prev"> </div>
+            <div class="hi-next"> </div>
+            <ul>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+            </ul>
+          </div>
+        </div> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+        <script src="Javascript/jquery.hislide.js"> </script>
+        <script>
+          $('.slide').hiSlide();
+        </script> -->
+        <div class="main__recipes">
+          <div class="main__recipes_title">
+            <div class="main__recipes_title-text class="animation"">
+              The most popular dishes
+            </div>
+          </div>
+          <div class="main__recipes-section">
+            <div class="main__recipes-section_box1 main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img class="img1" src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <!-- <a href="#"><button class="main__recipes-section_box-button1" type="button" name="button">Читать дальше</button> </a> -->
+              <button id="b1" class="main__recipes-section_box-button1 main__recipes-section_box-button" type="button" name="button">Читать дальше</button>
+            </div>
+            <div class=" main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__section_facts">
+          <div class="main__section_facts-text-img">
+            <span>Useful Facts</span>
+            <img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/44/000000/external-vegetables-healthy-food-wanicon-lineal-color-wanicon.png"/>
+          </div>
+          <div class="main__section_facts-text">
+            <h2>Products that can be consumed without restriction</h2>
+            <div class="main__section_facts-text-ul">
+              <!-- <ul>
+                <li>салат листовой, зелень, шпинат</li>
+                <li>чай, кофе без сахара и сливок</li>
+                <li>питьевая негазированная вода</li>
+                <li>капуста, грибы огурцы, помидоры, перец</li>
+                <li>мясо</li>
+                <li>рыба дикая</li>
+                <li>кабачки, баклажаны, свекла, морковь, стручковая фасоль</li>
+                <li>редис, редька, репка, зеленый горошек</li>
+              </ul> -->
+              <ul class="text-ul animation">
+                  <li class="animation">lettuce, greens, spinach</li>
+                  <li class="animation">tea, coffee without sugar and cream</li>
+                  <li class="animation">non-carbonated drinking water</li>
+                  <li class="animation">cabbage, mushrooms, cucumbers, tomatoes, peppers</li>
+                  <li class="animation">meat</li>
+                  <li class="animation">wild fish</li>
+                  <li class="animation">zucchini, eggplant, beetroot, carrot, string beans</li>
+                  <li class="animation">radish, radish, turnip, green peas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__section_facts-text">
+            <h2>Products that need to be excluded or restricted as much as possible</h2>
+            <div class="main__section_facts-text-ul">
+              <!-- <ul>
+                <li>масло растительное</li>
+                <li>майонез</li>
+                <li>исключить мясо, выращенное с использованием гормонов и антибиотиков, как правило это свинина и курятина</li>
+                <li>сахар, мед</li>
+                <li>консервы мясные, рыбные</li>
+                <li>пирожные, торты и другие кондитерские изделия</li>
+                <li>мороженое</li>
+                <li>газированныце и сладкие напитки</li>
+                <li>печенье, изделия из сдобного теста</li>
+                <li>конфеты, шоколад (шоколад в больших количествах)</li>
+                <li>фрукты и ягоды: бананы, виноград, финики, арбуз, дыня</li>
+                <li>варенье, джемы</li>
+                <li>копчености, колбасные изделия, сосиски, сардельки</li>
+                <li>алкогольные напитки </li>
+              </ul> -->
+              <ul class="textul animation">
+                  <li class="animation">vegetable oil</li>
+                  <li class="animation">mayonnaise</li>
+                  <li class="animation">exclude meat grown using hormones and antibiotics, usually pork and chicken</li>
+                  <li class="animation">sugar, honey</li>
+                  <li class="animation">canned meat, fish</li>
+                  <li class="animation">cakes, cakes and other confectionery products</li>
+                  <li class="animation">ice cream</li>
+                  <li class="animation">carbonated and sugary drinks</li>
+                  <li class="animation">cookies, pastry products</li>
+                  <li class="animation">sweets, chocolate (chocolate in large quantities)</li>
+                  <li class="animation">fruits and berries: bananas, grapes, dates, watermelon, melon</li>
+                  <li class="animation">jam, jams</li>
+                  <li class="animation">smoked meats, sausages, sausages</li>
+                  <li class="animation">alcoholic beverages </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main__section_facts-text">
+            <h2>It is important to know</h2>
+            <div class="main__section_facts-text-ul">
+              <!-- <ul>
+                <li>диагноз ожирение ставится при объеме талии у мужчин более 94 см, у женщин – более 80 см при любом росте. Правильно замерять на уровне пупка</li>
+                <li>для снижения веса 80% это правильное питание, 20% - физические нагрузки</li>
+                <li>физическую активность можно начинать с ходьбы 30 мин 3 раза в неделю, постепенно увеличивая периодичность и интенсивность тренировок (целевая скорость – 6км/час, ежедневно проходить 3 километра за 30 минут)хорошей интенсивностью считается. Также хорошо помогает велосипед, плавание, бег, игровые виды спорта: волейбол, футбол, баскетбол, теннис. В хорошую погоду предпочтительней заниматься на свежем воздухе, утром, пока есть силы и воздух еще сильно не загрязнен выхлопными газами</li>
+                <li>количество потребляемой жидкости – 30 мл/кг у здоровых людей, 40 мл/кг – у людей с ожирением, но не более 4 литров в сутки. Стараться пить щелочную негазированную воду, рН которой приближается к 7. Щелочное или кислое состояние воды можно определить по специальным тест-полоскам для ротовой полости, которые продаются в аптеках. Вот некоторые примеры рН воды, замеренные нами: Эльбруссия – 7,0; Аква Домбай – 6,5; Пилигримм – 4,5; родники Кавказа – 4,5; Горная Вершина – 4,5 </li>
+                <li>питание должно быть разнообразным и сбалансированным. Из белковых продуктов предпочтение отдаётся мясу красных жирных сортов (говядина, баранина), рыба (желательная дикая, не фермерская которая выращена вне воли), яйца, кисломолочные продукты. Исключить полностью быстрые углеводы (сладости, сладкие напитки, изделия из белой муки). Восполнять углеводы за счет овощей и фруктов, лучше в свежем виде</li>
+                <li>ложиться спать не позднее 22.30, продолжительность сна не менее 7-8 часов. Гормон сна мелатонин является жиросжигателем. Спать надо в хорошо проветриваемой комнате со свежим воздухом, при температуре +19 градусов</li>
+              </ul> -->
+              <ul class="ultext animation">
+                <li class="animation">the diagnosis of obesity is made when the waist size in men is more than 94 cm, in women - more than 80 cm with any height. Correctly measure at the navel level</li>
+                <li class="animation">for weight loss, 80% is proper nutrition, 20% is physical activity</li>
+                <li class="animation">physical activity can be started with walking for 30 minutes 3 times a week, gradually increasing the frequency and intensity of training (target speed – 6 km / hour, daily walk 3 kilometers in 30 minutes)good intensity is considered. Cycling, swimming, running, game sports: volleyball, football, basketball, tennis also helps well. In good weather, it is preferable to practice outdoors, in the morning, while there is strength and the air is still not heavily polluted with exhaust gases </li>
+                <li class="animation">  the amount of liquid consumed is 30 ml /kg in healthy people, 40 ml/kg in obese people, but no more than 4 liters per day. Try to drink alkaline still water, the pH of which is approaching 7. The alkaline or acidic state of the water can be determined by special test strips for the oral cavity, which are sold in pharmacies. Here are some examples of the pH of water measured by us: Elbrussia - 7.0; Aqua Dombay - 6.5; Pilgrim - 4.5; springs of the Caucasus - 4.5; Mountain Peak - 4.5 </li>
+                <li class="animation">nutrition should be varied and balanced. Of protein products, preference is given to meat of red fatty varieties (beef, lamb), fish (preferably wild, not farmed, which is grown outside the will), eggs, fermented dairy products. Completely exclude fast carbohydrates (sweets, sugary drinks, white flour products). Replenish carbohydrates at the expense of vegetables and fruits, preferably fresh </li>
+                <li class="animation">go to bed no later than 22.30, sleep duration is at least 7-8 hours. The sleep hormone melatonin is a fat burner. It is necessary to sleep in a well-ventilated room with fresh air, at a temperature of +19 degrees </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__section_facts-text">
+
+          </div>
+          <div class="footer__section_facts-text">
+
+          </div>
+
+        </div>
+        <div class="main__partition">
+          <div class="main__partition-mailing">
+            <form id="form" class="main__partition-mailing_form">
+              <div class="main__partition-mailing_div">
+                  <p class="main__partition-mailing_p">Write your email to receive the best recipes of the day</p>
+              </div>
+              <div class="main__partition-mailing_div">
+                <input class="main__partition-mailing_input" type="text" name="email" value="example@gmail.com">
+              </div>
+              <div class="main__partition-mailing_div">
+                <button  class="main__partition-mailing_button" type="button" name="button">Отправить </button>
+              </div>
+              <div class="main__partition-mailing-tohide">
+                <label class="main__partition-mailing_label" for="email">The data has been sent! Thanks</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__section"> <!-- for разные ссылки на блюда еду -->
+          <div class="footer__section_facts">
+        </div>
+        <div class="footer__links"> <!-- Ссылки на наши контакты соц сети -->
+          <div class="footer__links_socialNetwork">
+            <div class="footer__links_icons">
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/material/30/000000/twitter-squared.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/ios-filled/30/000000/facebook-f.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/android/30/000000/vk-com--v1.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/ios/30/000000/instagram-new--v1.png"/>
+                        </a>
+                </div>
+            </div>
+            <div class="footer__links_number">
+                <div class="footer__links_text">
+                    <p>Phone number: +7 777 777 77 77</p>
+                    <p>Email address: <a href="#">sozdatel@gmail.com</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Javascript/javaS4.js"></script>
+  <script src="Javascript/login.js"></script>
+  <script src="Javascript/jsin4.js"></script>
+
+</body>
+</html>

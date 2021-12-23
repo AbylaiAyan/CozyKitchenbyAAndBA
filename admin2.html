@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style/adminstyle.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <a href="index.html"><img  class="headimg" src="https://img.icons8.com/fluency/70/000000/cake.png"/></a>
+            </div>
+
+            <span class="dashboard">Admin panel</span>
+
+            <div class="admin">
+                <span class="admin__name"> Abylai Ayan</span>
+                <div class="admin__photo2" id="logbtn"></div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="acc2">
+        <div class="admin2">
+            <span class="admin__name2">Bauyrzhan Dias</span>
+            <a href="admin.html"><div class="admin__photo" id="logbtn"></div></a>
+        </div>
+    </div>
+    <section class="main">
+        <section class="sidebarm">
+            <div class="sidebar__head">
+                <div class="head__photo2"></div>
+                <span class="name">Abylai Ayan <br>
+                    <div class="adm">
+                        <div class="circle"></div>
+                        <span class="name2">Admin</span>
+                    </div>
+                </span>
+
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="#users"><i class="fas fa-user"></i>Users</a>
+                    </li>
+
+                    <li>
+                        <a href="#pages" class="pages"><i class="fas fa-file"></i>Pages
+                        <i class="fas fa-caret-down"></i>
+                        </a>
+
+                    </li>
+                    <div class="listfunc">
+                        <ul class="subitem">
+                            <li class="subitem"><a href="index.html">Main</a></li>
+                            <li class="subitem"><a href="index2.html">PP</a></li>
+                            <li class="subitem"><a href="index3.html">Recepies</a></li>
+                            <li class="subitem"><a href="index.html4">Cart</a></li>
+                        </ul>
+                    </div>
+                    <li>
+                        <a href="#maps"><i class="fas fa-map-marked-alt"></i>Maps</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sidebarc">
+            <div class="main-content" id="users">
+              <div class="container">
+                  <form id="frmPerson" class="form-horizontal">
+                      <div class="form-group">
+                          <label for="Name" class="labelform">Name</label>
+                          <div class="inputtype">
+                              <input type="text" id="Nome" class="form-control" placeholder="Name">
+                          </div>
+                      </div>
+
+                    <div class="form-group">
+                          <label for="Telephone" class="labelform">Telephone</label>
+                          <div class="inputtype">
+                              <input type="text" id="Telefone" class="form-control" placeholder="Telephone">
+                          </div>
+                      </div>
+                    <div class="form-group">
+                          <label for="Email" class="labelform">Email</label>
+                          <div class="inputtype">
+                              <input type="email" id="Email" class="form-control" placeholder="Email">
+                          </div>
+                      </div>
+
+                      <div class="form-group">
+                          <div class="subbtn">
+                              <input type="submit" value="Submit" id="btnSave" class="success"/>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+
+                <div class="container">
+                    <table id="tblList" class="table table-bordered"></table>
+                </div>
+            </div>
+
+            <div class="maps" id="maps">
+                <div id="location" >
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADQGkBwQLUonLjrHi_36shNctQvHHdlDA&callback=initMap" async defer></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="Javascript/admin.js"></script>
+</body>
+</html>

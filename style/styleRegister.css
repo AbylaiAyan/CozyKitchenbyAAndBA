@@ -1,0 +1,237 @@
+body {
+	font-family: Europa,Helvetica Neue,Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+
+
+  .header__tools_icon {
+	padding: 0;
+	align-items: center;
+	display: flex;
+  }
+
+  /*======================= ICONKA only =======================*/
+  .header__tools_icon > a {
+	text-decoration: none;
+	color: #FF8C00;
+  }
+
+  .header__tools_icon-img {
+	margin-left: 10px;
+  }
+
+
+  /*======================= register part =======================*/
+
+  .partRegister {
+	min-width: 300px;
+	max-width: 350px;
+	/* margin:60px 36.85%; */
+	margin: 60px auto;
+	padding: 30px;
+	box-shadow: 0 0 15px rgba(210, 210, 210, 0.9);
+	animation: open 1s;
+  }
+
+  .register {
+	text-align: center;
+  }
+
+  .toregister {
+	font-size: 2rem;
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 10px 9px 0;
+	border-bottom: 2px black solid;
+	/* border-color: #A9A9A9; */
+	border-color: #444;
+
+	  transition-timing-function: linear;
+	  transition: color 700ms;
+  }
+
+  @keyframes open{
+	 from {
+		transform: translateY(80%) scale(-1, 1);
+		opacity:0;
+	 }
+  }
+
+  /*======================= FORM =======================  */
+
+
+  .formval.success input {
+	border-color: #2ecc71;
+}
+
+.formval.error input {
+	border-color: #e74c3c;
+}
+
+.formval small {
+	font-size: 14px;
+	  color: #e74c3c;
+	  position: absolute;
+	  top: 80px;
+	  left: 0;
+	  visibility: hidden;
+	  transition: .3s;
+	  margin-bottom: 10px;
+  }
+
+  .formval.error small {
+	  visibility: visible;
+	  transition: .3s;
+	  margin-bottom: 10px;
+
+  }
+
+
+  .inForm {
+  line-height: 1.5;
+  }
+
+  /* ======================= */
+  .formval {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+
+  }
+
+
+  .formval label {
+	display: inline-block;
+	font-size: .9rem;
+	margin-bottom: 0.375rem;
+	font-weight: 700;
+	color: #4a4d55;
+  }
+
+
+  .inForm__input {
+	display: block;
+	border-radius: 4px;
+	margin-top: 5px;
+	border: 1px solid #cacacc;
+	width: 91.5%;
+	height: 26px;
+	padding: 0.5em 1em;
+  }
+
+
+  /* ======================= */
+  .inform__button {
+	margin-top: 45px;
+	padding: 9px 14px;
+	border:0;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: 700;
+	background-color: orange;
+	width: 100%;
+  }
+
+  .inform__buttonSpan {
+	line-height: 1.5;
+	cursor: pointer;
+  }
+
+  .inform__button:hover {
+	box-shadow: 0 0 15px rgba(210, 210, 210, 0.9);
+	cursor: pointer;
+  }
+
+
+
+  * {
+	transition-timing-function: linear;
+	transition: background-color 700ms;
+  }
+
+  input:focus {
+	outline: 2px solid #FFA500	;
+	border: 0;
+  }
+
+
+
+  /* ======================= required =======================*/
+  .requiredCaution {
+	width: 99%;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #3a343a;
+	border: 2px solid red;
+	display: none;
+  }
+
+  .requiredCaution-section {
+  display: grid;
+  grid-template-columns: 51px 1fr;
+  }
+
+
+  .requiredCaution__icon > img {
+	margin-top: 14px;
+  }
+
+
+  .requiredCaution_text {
+	padding-left:12px;
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	font-size: 0.8rem;
+	line-height: 1.5;
+  }
+
+  .requiredCaution_text > p {
+	margin: 5px 0;
+	font-weight: bold;
+	font-family: Europa,Helvetica Neue,Arial,sans-serif;
+  }
+
+  .tri {
+	margin-top: 1px;
+	margin-left:94.7%;
+	width: 0px;
+	height:0px;
+	/* background-color: white; */
+	border-top: 20px solid red;
+	border-left: 20px solid transparent;
+  }
+
+
+  /*======================= 1 label input required =======================*/
+  .requiredCaution-label {
+	display: grid;
+	grid-template-columns: 25px 1fr;
+	margin-top: 5px;
+	color: #3a343a;
+  }
+
+  .requiredCaution__icon-label {
+	background-color: red;
+	align-items: center;
+	height: 25px;
+  }
+
+  .requiredCaution__icon-label > img {
+	margin-top: 5px;
+	margin-left: 5px;
+  }
+
+  .requiredCaution_text-label > p {
+	padding-left:12px;
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	font-size: 0.8rem;
+	line-height: 1.5;
+	margin: 5px 0 2px 0;
+	font-weight: 600;
+  }

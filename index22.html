@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style22.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/fluency/50/000000/cake.png" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Corinthia:wght@700&family=Diplomata&family=IBM+Plex+Sans:wght@200&family=Nunito+Sans:ital,wght@0,400;0,600;1,600&family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@700&display=swap" rel="stylesheet">
+  <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+  <title>Cozy Kitchen</title>
+</head>
+<body>
+  <div class="">
+    <div class="">
+      <div class="header">
+        <div class="header__container">
+          <div class="header__tools"> <!-- будет титулка и вход и регистрация -->
+            <div class="header__tools_icon">
+              <a href="index11.html"><img  class="header__tools_icon-img" src="https://img.icons8.com/fluency/70/000000/cake.png"/></a>
+            </div>
+            <div class="header__arrow">
+              <div class="header__arrow_downOrup">
+                <button type="button" onclick="navMenu();" name="button">
+                  <img id="downOrUp" src="https://img.icons8.com/color/70/000000/drag-list-down.png"/>
+                </button>
+              </div>
+            </div>
+            <div class="header__tools_nav" id="navNav">
+              <div class="header__nav nav">  <!-- панель навигации ссылки -->
+                <div class="header__nav_list-div">
+                  <ul>
+                    <li id="activeS"><a href="index22.html">Hot dishes</a></li>
+                    <li><a href="index33.html">Confectionery</a></li>
+                    <li ><a href="index44.html">Proper Nutrition</a></li>
+                    <li><a href="admin.html">Favourites</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header__tools_sign" id="signNav">
+              <div class="header__tools_sign-In">
+                <a href="#">
+                  <button class="header__tools_sign-In-button buttons" id="login-btn" type="button" name="button">
+                    Login
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="header__tools_goOut" id="goOutNav">
+              <div class="header__tools_log-out">
+                <a href="index.html">
+                  <button class="header__tools_log-out-button buttons" id="logout-btn" type="button" name="button">
+                    Log out
+                  </button>
+                </a>
+              </div>
+            </div>
+              <div class="valid">
+                  <div class="login">
+                    <i class="fas fa-times" id="form-close"></i>
+                      <form name='form-login'>
+                          <h3>SIGN IN</h3>
+
+                          <label for="userName">Email</label>
+                          <input type="email" class="box" id="userName" placeholder="Username" required>
+
+                          <label for="userPw">Password</label>
+                          <input type="password" class="box" id= "userPw" placeholder="Password" required>
+
+                          <div id="remember">
+                              <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                                     style="display: inline-block;">
+                              <label>Remember me</label>
+                          </div>
+
+                          <input id= "login_btn" class="valid_btn" type="submit" value="Login" onclick="check()">
+                          <p>don't have and account? <a href="indexRegister.html">register now</a></p>
+
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="main__home">
+          <div class="main__home_text">
+            <div class="main__home_text-title">
+              Recipes for all occasions
+            </div>
+            <div class="main__home_text-p">
+              <p>Looking for recipes?</p>
+              <p>Here you will find a huge number of recipes for various dishes, pastries for the sweet tooth among our users, and useful recipes for healthy and athletic visitors to the site.</p>
+              <p>If you like one or more recipes, you can add them to your favorites. You can view them later or save them to use every day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main_photos">
+          <input class="checkboxInput" type="checkbox" id="startPlay" >
+          <label class="labelSlider" for="startPlay">
+            <div class="main__changer">  </div>
+          </label>
+            <div class="main__slider">
+              <div class="main__slider-animation">
+                <img src="img/img2sAnim8.jpg" alt="eda3">
+                <img src="img/img2sAnim5.jpg" alt="eda2">
+                <img src="img/img2sAnim4.jpg" alt="eda3">
+                <img src="img/img2sAnim2.jpg" alt="eda3">
+                <img src="img/img2sAnim1.jpg" alt="eda2">
+                <img src="img/img2sAnim.jpg" alt="eda1">
+                <img src="img/img2sAnim3.jpg" alt="eda2">
+                <img src="img/img2sAnim6.jpg" alt="eda3">
+                <img src="img/img2sAnim7.jpg" alt="eda2">
+              </div>
+            </div>
+        </div>
+
+        <div class="main__recipes">
+          <div class="main__recipes_title">
+            <div class="main__recipes_title-text">
+              The most popular dishes
+            </div>
+          </div>
+          <div class="main__recipes-section">
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__recipes-main">
+          <div class="main__recipes-main-page">
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Roast beef<img src="https://img.icons8.com/color/38/000000/fire-element--v2.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/roastbeef.jpg" alt="edaR">
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                Roast beef is delicious. A piece of well-fed pulp (2 kg) should be cleaned from films and fat. Finely chop the cut fat, put it on a hot frying pan and melt.
+                <br>
+                Fry the meat in a whole piece until a crust forms. Transfer to a leaf, add to the beef randomly chopped carrots, onions, one root of parsley or celery. Sprinkle with spices: pepper, crushed bay leaf, salt. Send it to the oven, pour kvass (1.5 cups) every 10 minutes. Bake until cooked.
+                <br>
+                Collect meat juice from a baking sheet, dilute it with boiled water (1/4 cup), cool. Remove the frozen fat from the surface, heat the juice, dilute with sour cream (1/2 cup). Remove the roast from the oven, cool slightly, cut across the fibers into portions, pour over the prepared sauce, serve to the table.
+                <br>
+                You can garnish the roast with fried potatoes, boiled or stewed vegetables: carrots, turnips, rutabaga, stewed or fried mushrooms.
+              </div>
+            </div>
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Moldovan Meatballs<img src="https://img.icons8.com/color/38/000000/fire-element--v2.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/tef.jpg" alt="edaT">
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                A wonderful dish of chopped meat. Prepare minced beef (500 g), onion (3 pcs.), garlic (4 cloves). Add salt, pepper, 1 tablespoon of fat milk or cream. Roll small balls, roll in flour (5 spoons) and fry in vegetable oil.
+                  <br>
+                Prepare the sauce. Take one root of carrot, parsley, leek, chop into strips, fry in vegetable fat. Add tomato (3 tablespoons), wine vinegar (1 teaspoon), sugar (1 teaspoon), salt and spices to taste. Dilute with meat broth (1/2 cup), simmer for 10 minutes. Then pour in four tablespoons of dry wine, white or red is not essential, and simmer for another five minutes.
+                  <br>
+                Put the meatballs in a saucepan with a thick bottom, pour the sauce and simmer for 20 minutes on low heat. At the end of the process, put the chopped three cloves of garlic, celery and parsley. Remove from the stove and let it brew under the lid for five minutes. Serve with the sauce in deep plates.
+              </div>
+            </div>
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Beef baked in dough<img src="https://img.icons8.com/color/38/000000/fire-element--v2.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/goov.jpg" alt="edaT">
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                This dish of Old Russian cuisine is ideally prepared in a Russian oven. When baking in the oven, the meat should be medium-rare, then it will be tender and juicy. For baking, it is preferable to take a rump or a rump. Consumption of products:
+                <br>
+                                  <span class="indent">
+                                    2-2.5 kg of meat;<br>
+                                  </span>
+                                  <span class="indent">
+                                    100 g of lard;<br>
+                                  </span>
+                                  <span class="indent">
+                                    1 spoonful of lemon juice;<br>
+                                  </span>
+                                  <span class="indent">
+                                    1 spoonful of chopped greens;<br>
+                                  </span>
+                                  <span class="indent">
+                                    salt, bay leaf.<br>
+                                  </span>
+                                  <span class="indent">
+                                    For the test:<br>
+                                  </span>
+                                  <span class="indent">
+                                    4 cups flour;<br>
+                                  </span>
+                                  <span class="indent">
+                                    2 cups of water;<br>
+                                  </span>
+                                  <span class="indent">
+                                    4 tablespoons of vegetable oil.<br>
+                                  </span>
+                                  Make a cool unleavened dough and let it rest. At this time, prepare the beef: make incisions all over the piece and stuff with lard, rub with salt, sprinkle with dill and parsley.
+                                  <br>
+                                  Roll out the dough into a thin layer, put a piece of meat on it and wrap it well from all sides. Put it on a baking sheet and put it in a frying pan for two hours at a temperature of 180 degrees. When the dough begins to bake, make a small hole in it so that it does not break and the juice does not flow out.
+                                  <br>
+                                  Remove the dough from the finished meat, put it on a flat plate, sprinkle with lemon juice and sprinkle with herbs.
+              </div>
+            </div>
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Moldovan Meatballs<img src="https://img.icons8.com/color/38/000000/fire-element--v2.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/cher.jpg" alt="edaT">
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                This festive dish is prepared quite simply. We need to take:
+                <br>
+                <span class="indent">
+                  1.5 beef;<br>
+                </span>
+                <span class="indent">
+                  70 g butter; <br>
+                </span>
+                <span class="indent">
+                  400 g of pitted prunes; <br>
+                </span>
+                <span class="indent">
+                  1 tablespoon of sugar;<br>
+                </span>
+                <span class="indent">
+                  100 g of madeira;<br>
+                </span>
+                <span class="indent">
+                  1 cup meat broth;<br>
+                </span>
+                <span class="indent">
+                  200 g of rye bread;<br>
+                </span>
+                <span class="indent">
+                  1 cinnamon stick;<br>
+                </span>
+                <span class="indent">
+                  10-15 buds of cloves;<br>
+                </span>
+                <span class="indent">
+                  salt.<br>
+                </span>
+                The first step: take a soft juicy piece of beef, beat it well, rub it with salt and put it in a saucepan. Send a piece of butter there as well. Put it on the stove and fry, turning it over periodically so that it does not burn.
+                <br>
+                The second step: when the meat is half ready, put prunes washed in several waters, sugar, cinnamon, cloves, bread broken into pieces. Pour in the wine, broth and simmer until the meat is soft. Put it on a plate, cut into portions, garnish with prunes. Strain the juice in which the meat was stewed and pour it over the beef.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__partition">
+          <div class="main__partition-mailing">
+            <form id="form" class="main__partition-mailing_form">
+                <div class="main__partition-mailing_div">
+                    <p class="main__partition-mailing_p">Write your email to receive the best recipes of the day</p>
+                </div>
+                <div class="main__partition-mailing_div">
+                  <input class="main__partition-mailing_input" type="text" name="email" value="example@gmail.com">
+                </div>
+                <div class="main__partition-mailing_div">
+                  <button  class="main__partition-mailing_button" type="button" name="button">Отправить </button>
+                </div>
+                <div class="main__partition-mailing-tohide">
+                  <label class="main__partition-mailing_label" for="email">The data has been sent! Thanks</label>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="">
+
+      </div>
+      <div class="footer">
+        <div class="footer__section"> <!-- for разные ссылки на блюда еду -->
+          <div class="footer__links_meal">
+
+          </div>
+        </div>
+        <div class="footer__links"> <!-- Ссылки на наши контакты соц сети -->
+          <div class="footer__links_socialNetwork">
+            <div class="footer__links_icons">
+                <div class="footer__links_item-icon">
+                        <a href="https://twitter.com/twitter">
+                          <img src="https://img.icons8.com/material/30/000000/twitter-squared.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="https://ru-ru.facebook.com/">
+                          <img src="https://img.icons8.com/ios-filled/30/000000/facebook-f.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/android/30/000000/vk-com--v1.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="https://www.instagram.com/_abylai.a.a/">
+                          <img src="https://img.icons8.com/ios/30/000000/instagram-new--v1.png"/>
+                        </a>
+                </div>
+            </div>
+            <div class="footer__links_number">
+                <div class="footer__links_text">
+                    <p>Phone number: +7 777 777 77 77</p>
+                    <p>Email address: <a href="#">sozdatel@gmail.com</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Javascript/javaS1.js"></script>
+  <script src="Javascript/jsin4.js"></script>
+
+</body>
+</html>

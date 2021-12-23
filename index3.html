@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style3.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/fluency/50/000000/cake.png" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Corinthia:wght@700&family=Diplomata&family=IBM+Plex+Sans:wght@200&family=Nunito+Sans:ital,wght@0,400;0,600;1,600&family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+  <title>Cozy Kitchen</title>
+</head>
+<body>
+  <div class="">
+    <div class="">
+      <div class="header">
+        <div class="header__container">
+          <div class="header__tools"> <!-- будет титулка и вход и регистрация -->
+            <div class="header__tools_icon">
+              <a href="index.html"><img class="header__tools_icon-img" src="https://img.icons8.com/fluency/70/000000/cake.png"/></a>
+            </div>
+            <div class="header__arrow">
+              <div class="header__arrow_downOrup">
+                <button type="button" onclick="navMenu();" name="button">
+                  <img id="downOrUp" src="https://img.icons8.com/color/70/000000/drag-list-down.png"/>
+                </button>
+              </div>
+            </div>
+            <div class="header__tools_nav" id="navNav">
+              <div class="header__nav nav">  <!-- панель навигации ссылки -->
+                <div class="header__nav_list-div">
+                  <ul>
+                    <li><a href="index2.html">Hot dishes</a></li>
+                    <li id="activeS"><a href="index3.html">Confectionery</a></li>
+                    <li><a href="index4.html">Proper Nutrition</a></li>
+                    <li><a href="admin.html">Favourites</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header__tools_sign" id="signNav">
+              <div class="header__tools_sign-In">
+                <a href="#">
+                  <button class="header__tools_sign-In-button buttons" id="login-btn" type="button" name="button">
+                    Login
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="header__tools_goOut" id="goOutNav">
+              <div class="header__tools_log-out">
+                <a href="#">
+                  <button class="header__tools_log-out-button buttons" id="logout-btn" type="button" name="button">
+                    Log out
+                  </button>
+                </a>
+              </div>
+            </div>
+              <div class="valid">
+                  <div class="login">
+                    <i class="fas fa-times" id="form-close"></i>
+                      <form name='form-login'>
+                          <h3>SIGN IN</h3>
+
+                          <label for="userName">Email</label>
+                          <input type="email" class="box" id="userName" placeholder="Username" required>
+
+                          <label for="userPw">Password</label>
+                          <input type="password" class="box" id= "userPw" placeholder="Password" required>
+
+                          <div id="remember">
+                              <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                                     style="display: inline-block;">
+                              <label>Remember me</label>
+                          </div>
+
+                          <input id= "login_btn" class="valid_btn" type="submit" value="Login" onclick="check()">
+                          <p>don't have and account? <a href="indexRegister.html">register now</a></p>
+
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main__home">
+          <div class="main__home_text">
+            <div class="main__home_text-title">
+              The best baking recipes<img src="https://img.icons8.com/dusk/50/000000/piece-of-lemon-cake.png"/>
+            </div>
+            <div class="main__home_text-p">
+              <p>Baking is usually called products made of any kind of dough, cooked in an oven or oven. However, dough fried in a frying pan or in deep oil is also often called baking.</p>
+              <p>All pastries can be divided into sweet and unsweetened, and within each group there are many types of pastries: pies and pies, cupcakes, cookies, cakes and pastries, buns and cheesecakes from different types of dough. Homemade bread and all bakery products are also baked goods.</p>
+              <p>Traditional, unique pastries are available in any national cuisine. What can I say, any hostess will have more than one recipe for her favorite sweet and unsweetened pastries. So we can safely say that there are not even hundreds of baking recipes, but thousands!</p>
+              <p>For baking to be successful, you need a well-adjusted gas or electric oven. But its absence is not at all a reason to abandon homemade baking: a microwave oven with an oven function, a mini oven, an aerogrill and even a slow cooker will perfectly cope with the preparation of many types of pastries.</p>
+              <p>It is best to measure the ingredients for making homemade cakes using kitchen scales, but if there are none, a measuring cup will do.</p>
+              <p>Homemade cakes are one of the symbols of a cozy home. Have a good baking!</p>
+            </div>
+          </div>
+          <div class="main__home_photos">
+            <img src="img/str41.jfif" alt="img1">
+            <img src="img/str42.jpg" alt="img2">
+            <img src="img/str43.jfif" alt="img3">
+            <img src="img/str44.jfif" alt="img4">
+            <img src="img/str45.jfif" alt="img4">
+          </div>
+        </div>
+        <!-- <div class="slidernew">
+          <div class="slide hi-slide">
+            <div class="hi-prev"> </div>
+            <div class="hi-next"> </div>
+            <ul>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+              <li><img src="img/img4.jpg" alt="eda4"></li>
+            </ul>
+          </div>
+        </div> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"> </script>
+        <script src="Javascript/jquery.hislide.js"> </script>
+        <script>
+          $('.slide').hiSlide();
+        </script> -->
+        <div class="main__recipes">
+          <div class="main__recipes_title">
+            <div class="main__recipes_title-text">
+              The most popular dishes
+            </div>
+          </div>
+          <div class="main__recipes-section">
+            <div class="main__recipes-section_box1 main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img class="img1" src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <!-- <a href="#"><button class="main__recipes-section_box-button1" type="button" name="button">Читать дальше</button> </a> -->
+              <button id="b1" class="main__recipes-section_box-button1 main__recipes-section_box-button" type="button" name="button">Читать дальше</button>
+            </div>
+            <div class=" main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__recipes-main">
+          <div class="main__recipes-main-page">
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Quick Napoleon Cake<img src="https://img.icons8.com/color/38/000000/hanukkah-donut.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/str3.jpg" alt="edaR">
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                Quick cake "Napoleon" from the finished puff pastry is not too difficult to prepare even for a novice cook, because, in fact, his task is to create a cream. Well, even a child can bake cakes from the existing base! However, the process of making the cream for this cake will require your attention, patience, and a certain skill. The most important thing is not to go far from the stove while the mass is cooking: you were distracted for just a minute, and the cream has already burned. If you do everything right, then such a delicious Napoleon cake will appear on the table that no one will even think of asking you if you prepared the dough yourself or used the finished puff pastry.
+                <br>
+                <span class="indent">
+                  Step 1
+                </span>
+                <br>
+                Put the frozen puff pastry for the Napoleon cake out of the package on the desktop. Let it thaw completely at room temperature. Heat the oven to 200°C.
+                <br>
+                <span class="indent">
+                  Step 2
+                </span >
+                <br>
+                Line the baking tray for baking Napoleon cake cakes with baking paper. Divide the thawed puff pastry into two parts and roll out into layers about 5 mm thick.
+                <br><span class="indent">
+                  Step 3
+                </span>
+                <br>Cut the edges of the layers so that you get squares with a side of 22 cm. Transfer one of them to a baking sheet. Prick it often with a fork so that it does not swell when baking. Place the dough scraps side by side.
+                <br><span class="indent">
+                  Step 4
+                </span>
+                <br>Place a baking sheet with a layer of dough in the oven for 10-12 minutes. Transfer the finished Napoleon cake cake to the grill and let it cool completely. On the same baking sheet, bake the second cake and the dough trimmings. Let it cool down.
+                <br><span class="indent">
+                  Step 5
+                </span>
+                <br>Prepare the cream for the Napoleon cake. Pour the starch into a ladle. Add 30 g of sugar and mix. Pour in the milk. Add the seeds from the vanilla pod, stir and put on fire. Stirring constantly with a whisk, bring the mixture almost to a boil.
+                <br><span class="indent">
+                  Step 6
+                </span>
+                <br>In a separate bowl, whisk the yolks with the remaining sugar. Continuing to beat, pour in the milk mixture in a thin stream. Pour into a ladle again, put on fire and bring to a boil, stirring continuously. Cook for 2 minutes.
+                <br><span class="indent">
+                  Step 7
+                </span>
+                <br>Pour the Napoleon cake cream into a clean bowl, add the butter and mix. Allow to cool completely at room temperature. Chop the baked dough scraps with a rolling pin.
+                <br><span class="indent">
+                  Step 8
+                </span>
+                <br>Spread the bottom cake with two thirds of the cream. Cover with a second cake, brush with the remaining cream and sprinkle with the resulting crumbs. Sprinkle with powdered sugar before serving.
+              </div>
+            </div>
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Lean pie with plums and cranberries<img src="https://img.icons8.com/color/38/000000/hanukkah-donut.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/str32.jpg" alt="edaT">
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                A lean pie with plums and lingonberries is not necessary to eat only during lent. It can be baked both for vegans and for those who want to give up animal protein for a while. If the recipe is good, the lean pie is not inferior to the taste of the most familiar, the dough for which is prepared with eggs and butter.
+                <br>
+                <span class="indent">
+                  Step 1
+                </span>
+                <br>
+                Put the vegetable oil in the freezer for about 30 minutes. It should thicken.
+                <span class="indent">
+                  Step 2
+                </span >
+                <br>
+              Fill the cranberries and plums with sugar, put on medium heat, pour in 0.5 cups of water, close the lid and bring to a boil. Remove the lid and cook for 3 minutes. Pour the syrup into a bowl, cool.
+                <br><span class="indent">
+                  Step 3
+                </span>
+                <br>Sift the flour with salt and baking powder into a bowl. Lay out the frozen butter, chop the dough with two knives to make a crumb. Pour in the syrup, add vanilla sugar and cinnamon, knead the dough quickly.
+                <br><span class="indent">
+                  Step 4
+                </span>
+                <br>Sprinkle a silicone baking dish with a diameter of 22 cm with water. Put a little dough on the bottom, distribute the plum and lingonberries evenly.
+                <br><span class="indent">
+                  Step 5
+                </span>
+                <br>Put the remaining dough on top, put the mold in the center of the oven. Bake at 180 ° C for 35-40 minutes. A wooden skewer stuck in the center of the pie should come out dry.
+                <br><span class="indent">
+                  Step 6
+                </span>
+                <br>Cool the pie on the grill, carefully turn it onto a platter, sprinkle with powdered sugar and serve.
+              </div>
+            </div>
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Simple raspberry pie "Raspberry jingle"<img src="https://img.icons8.com/color/38/000000/hanukkah-donut.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/str33.jpg" alt="edaT">
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                Even a novice hostess can easily cope with the preparation of such a simple raspberry pie. Well, for an experienced one, there will be no problems at all: just a solid pleasure from the ease of the process and the inimitable berry flavor of the filling! Such a pie can be cooked at least every day, especially at the cottage in the raspberry season. Just like that, I got up in the morning, filled a bowl with berries from a bush and half the business is in the hat. It remains only to make the dough according to the recipe and wait for the moment when a simple raspberry pie is ready (spoiler: a little more than half an hour). What's next? And then set the table, boil the kettle, take out the dishes. And be ready for the visit of neighbors, who will certainly be "invited" to visit the magical aroma of berry pastries!
+                <br>
+                <span class="indent">
+                  Step 1
+                </span>
+                <br>
+                Add butter and yogurt to the beaten eggs
+Prepare the dough for a simple raspberry pie. Beat the eggs until fluffy. Pour in the sugar, continuing to beat until the mass doubles. Then add the melted butter and yogurt (with soda).
+                <br>
+                <span class="indent">
+                  Step 2
+                </span >
+                <br>
+                Preparing the dough for raspberry pie
+  Sift the flour through a fine sieve into a separate bowl. Then pour into the egg mass and beat well with a whisk again. The dough should not be too thick.
+                <br><span class="indent">
+                  Step 3
+                </span>
+                <br>Pour the dough into the mold and decorate with berries
+Grease a baking dish for a simple raspberry pie with a small amount of butter. Pour out half of the prepared dough, spread the berries on top in one layer.
+                <br><span class="indent">
+                  Step 4
+                </span>
+                <br>Pour the remaining raspberry dough. Carefully smooth out with a silicone spatula. Put the remaining raspberries. Heat the oven to 180 °C. Place the mold with a simple raspberry pie on the middle level.
+                <br><span class="indent">
+                  Step 5
+                </span>
+                <br>Bake in a hot oven for 35 minutes. Let the finished cake cool in the mold until warm. It is better to serve it on the table, because the pie turns out to be very tender. Sprinkle with vanilla powdered sugar.
+                <br><span class="indent">
+                  Step 6
+                </span>
+                <br>Cool the pie on the grill, carefully turn it onto a platter, sprinkle with powdered sugar and serve.
+              </div>
+            </div>
+            <div class="main__recipes-main-page_text">
+              <div class="main__recipes-main-page_text-title">
+                Coconut cake with caramel and banana<img src="https://img.icons8.com/color/3/000000/hanukkah-donut.png"/>
+              </div>
+              <div class="main__recipes-main-page_text-img">
+                <img src="img/str34.jpg" alt="edaT">8
+              </div>
+              <div class="main__recipes-main-page_text-T">
+                Coconut pie shifter with creamy caramel and banana will be a perfect end to a family dinner.
+                <br>
+                <span class="indent">
+                  Step 1
+                </span>
+                <br>
+                Prepare the products. This quantity is designed for a form of 10x20 cm.
+                <br>
+                <span class="indent">
+                  Step 2
+                </span >
+                <br>
+                For the dough, beat 110 grams of soft butter with 140 grams of sugar, continuing to beat, add eggs one at a time, pour 80 ml of milk. Combine the flour with baking powder and sift. Add the dry ingredients to the butter-egg mixture and pour in the coconut chips. Mix it up.
+                <br><span class="indent">
+                  Step 3
+                </span>
+                <br>Melt 40 grams of sugar in a saucepan. Add 40 grams of butter, stir the mixture with a silicone spatula until smooth, pour in 2 tablespoons of milk.
+                <br><span class="indent">
+                  Step 4
+                </span>
+                <br>The bottom of the mold is lined with parchment, spread out banana circles and pour caramel.
+                <br><span class="indent">
+                  Step 5
+                </span>
+                <br>Put the prepared dough on the caramel and distribute it according to the form. Bake the pie in the oven, preheated to 180 ° C, for 35 minutes. Turn the warm finished cake onto a platter.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__partition">
+          <div class="main__partition-mailing">
+            <form id="form" class="main__partition-mailing_form">
+              <div class="main__partition-mailing_div">
+                  <p class="main__partition-mailing_p">Write your email to receive the best recipes of the day</p>
+              </div>
+              <div class="main__partition-mailing_div">
+                <input class="main__partition-mailing_input" type="text" name="email" value="example@gmail.com">
+              </div>
+              <div class="main__partition-mailing_div">
+                <button  class="main__partition-mailing_button" type="button" name="button">Отправить </button>
+              </div>
+              <div class="main__partition-mailing-tohide">
+                <label class="main__partition-mailing_label" for="email">The data has been sent! Thanks</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__section"> <!-- for разные ссылки на блюда еду -->
+          <div class="footer__section_facts">
+        </div>
+        <div class="footer__links"> <!-- Ссылки на наши контакты соц сети -->
+          <div class="footer__links_socialNetwork">
+            <div class="footer__links_icons">
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/material/30/000000/twitter-squared.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/ios-filled/30/000000/facebook-f.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/android/30/000000/vk-com--v1.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/ios/30/000000/instagram-new--v1.png"/>
+                        </a>
+                </div>
+            </div>
+            <div class="footer__links_number">
+                <div class="footer__links_text">
+                    <p>Phone number: +7 777 777 77 77</p>
+                    <p>Email address: <a href="#">sozdatel@gmail.com</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Javascript/javaS4.js"></script>
+  <script src="Javascript/login.js"></script>
+  <script src="Javascript/jsin4.js"></script>
+
+</body>
+</html>

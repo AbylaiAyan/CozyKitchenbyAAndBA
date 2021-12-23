@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style11.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/fluency/50/000000/cake.png" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Corinthia:wght@700&family=Diplomata&family=IBM+Plex+Sans:wght@200&family=Nunito+Sans:ital,wght@0,400;0,600;1,600&family=Rye&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+<!--  header text title   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+  <title>Cozy Kitchen</title>
+</head>
+<body>
+  <div class="">
+    <div class="">
+      <div class="header">
+        <div class="header__container">
+          <div class="header__tools"> <!-- будет титулка и вход и регистрация -->
+            <div class="header__tools_icon">
+              <a href="index11.html"><img  class="header__tools_icon-img" src="https://img.icons8.com/fluency/70/000000/cake.png"/></a>
+            </div>
+            <div class="header__arrow">
+              <div class="header__arrow_downOrup">
+                <button type="button" onclick="navMenu();" name="button">
+                  <img id="downOrUp" src="https://img.icons8.com/color/70/000000/drag-list-down.png"/>
+                </button>
+              </div>
+            </div>
+            <div class="header__tools_nav" id="navNav">
+              <div class="header__nav nav">  <!-- панель навигации ссылки -->
+                <div class="header__nav_list-div">
+                  <ul>
+                    <li><a href="index22.html">Hot dishes</a></li>
+                    <li><a href="index33.html">Confectionery</a></li>
+                    <li><a href="index44.html">Proper Nutrition</a></li>
+                    <li><a href="admin.html">Favourites</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header__tools_sign" id="signNav">
+              <div class="header__tools_sign-In">
+                <a href="#">
+                  <button class="header__tools_sign-In-button buttons" id="login-btn" type="button" name="button">
+                    Login
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="header__tools_goOut" id="goOutNav">
+              <div class="header__tools_log-out">
+                <a href="index.html">
+                  <button class="header__tools_log-out-button buttons" id="logout-btn" type="button" name="button">
+                    Log out
+                  </button>
+                </a>
+              </div>
+            </div>
+              <div class="valid">
+                  <div class="login">
+                    <i class="fas fa-times" id="form-close"></i>
+                      <form name='form-login'>
+                          <h3>SIGN IN</h3>
+
+                          <label for="userName">Email</label>
+                          <input type="email" class="box" id="userName" placeholder="Username" required>
+
+                          <label for="userPw">Password</label>
+                          <input type="password" class="box" id= "userPw" placeholder="Password" required>
+
+                          <div id="remember">
+                              <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                                     style="display: inline-block;">
+                              <label>Remember me</label>
+                          </div>
+
+                          <input id= "login_btn" class="valid_btn" type="submit" value="Login" onclick="check()">
+                          <p>don't have and account? <a href="indexRegister.html">register now</a></p>
+
+                      </form>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main__home">
+          <div class="main__home_text">
+            <div class="main__home_text-title animation">
+              Recipes for all occasions
+            </div>
+            <div class="main__home_text-p animation">
+              <p>Looking for recipes?</p>
+              <p>Here you will find a huge number of recipes for various dishes, pastries for the sweet tooth among our users, and useful recipes for healthy and athletic visitors to the site.</p>
+              <p>If you like one or more recipes, you can add them to your favorites. You can view them later or save them to use every day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main_photos">
+          <input class="checkboxInput" type="checkbox" id="startPlay" >
+          <label class="labelSlider" for="startPlay">
+            <div class="main__changer">  </div>
+          </label>
+            <div class="main__slider">
+              <div class="main__slider-animation">
+                <img src="img/img1.jpg" alt="eda1">
+                <img src="img/img2.jpg" alt="eda2">
+                <img src="img/img3.jpg" alt="eda3">
+                <img src="img/img4.jpg" alt="eda4">
+                <img src="img/img6.jpeg" alt="eda5">
+                <img src="img/img5.jpg" alt="eda6">
+                <img src="img/img7.jpg" alt="eda7">
+                <img src="img/img8.jpg" alt="eda8">
+                <img src="img/img9.jpg" alt="eda9">
+              </div>
+            </div>
+        </div>
+
+        <div class="main__recipes">
+          <div class="main__recipes_title">
+            <div class="main__recipes_title-text animation">
+              The most popular dishes
+            </div>
+          </div>
+          <div class="main__recipes-section">
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+            <div class="main__recipes-section_box animation">
+              <h2>Lorem ipsum</h2>
+              <img src="https://klike.net/uploads/posts/2019-06/1559545529_1.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <a href="#"><button class="main__recipes-section_box-button" type="button" name="button">Читать дальше</button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="main__partition">
+          <div class="main__partition-mailing">
+            <form id="form" class="main__partition-mailing_form">
+                <div class="main__partition-mailing_div">
+                    <p class="main__partition-mailing_p">Write your email to receive the best recipes of the day</p>
+                </div>
+                <div class="main__partition-mailing_div">
+                  <input class="main__partition-mailing_input" type="text" name="email" value="example@gmail.com">
+                </div>
+                <div class="main__partition-mailing_div">
+                  <button  class="main__partition-mailing_button" type="button" name="button">Отправить </button>
+                </div>
+                <div class="main__partition-mailing-tohide">
+                  <label class="main__partition-mailing_label" for="email">The data has been sent! Thanks</label>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="">
+
+      </div>
+      <div class="footer">
+        <div class="footer__section"> <!-- for разные ссылки на блюда еду -->
+          <div class="footer__links_meal">
+
+          </div>
+        </div>
+        <div class="footer__links"> <!-- Ссылки на наши контакты соц сети -->
+          <div class="footer__links_socialNetwork">
+            <div class="footer__links_icons">
+                <div class="footer__links_item-icon">
+                        <a href="https://twitter.com/twitter">
+                          <img src="https://img.icons8.com/material/30/000000/twitter-squared.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="https://ru-ru.facebook.com/">
+                          <img src="https://img.icons8.com/ios-filled/30/000000/facebook-f.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="#">
+                          <img src="https://img.icons8.com/android/30/000000/vk-com--v1.png"/>
+                        </a>
+                </div>
+                <div class="footer__links_item-icon">
+                        <a href="https://www.instagram.com/_abylai.a.a/">
+                          <img src="https://img.icons8.com/ios/30/000000/instagram-new--v1.png"/>
+                        </a>
+                </div>
+            </div>
+            <div class="footer__links_number">
+                <div class="footer__links_text">
+                    <p>Phone number: +7 777 777 77 77</p>
+                    <p>Email address: <a href="#">sozdatel@gmail.com</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Javascript/javaS1.js"></script>
+
+</body>
+</html>
